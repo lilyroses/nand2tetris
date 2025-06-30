@@ -1,6 +1,6 @@
 # NAND.py
-import AND
-import NOT
+from AND import AND
+from NOT import NOT
 from is_valid_input import is_valid_input
 
 
@@ -15,3 +15,6 @@ def NAND(*args):
     return "ERROR"
 
   return  NOT(AND(args))
+
+
+print(NAND(1,0,1))

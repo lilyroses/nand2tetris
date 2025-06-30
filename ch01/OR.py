@@ -12,3 +12,6 @@ def OR(*args):
   if 1 in args:
     return 1
   return 0
+
+
+print(OR(10101, 100011))

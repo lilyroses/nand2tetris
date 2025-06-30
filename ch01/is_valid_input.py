@@ -1,11 +1,16 @@
-def is_valid_input(*args):
-  for arg in args:
-    if isinstance(arg, bool):
+def is_valid_input(inputs):
+  for inpt in inputs:
+
+    if isinstance(inpt, bool):
       return False
-    if not isinstance(arg, int):
+
+    if not isinstance(inpt, int):
       return False
-    if not (arg == 0 or arg == 1):
+
+    if (not inpt == 0) and (not inpt == 1):
       return False
+
+
   return True
 
 
