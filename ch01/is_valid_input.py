@@ -1,11 +1,11 @@
-def is_valid_input(inpt):
-  if isinstance(inpt, bool):
+def is_valid_input(b):
+  if isinstance(b, bool):
     return False
 
-  if not isinstance(inpt, int):
+  if not isinstance(b, int):
     return False
 
-  if (not inpt == 0) and (not inpt == 1):
+  if (not b == 0) or (not b == 1):
     return False
 
   return True
