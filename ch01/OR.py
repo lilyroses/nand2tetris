@@ -1,17 +1,6 @@
-# AND.py
-from is_valid_input import is_valid_input
+# OR.py
 
-
-def OR(*args):
-  if not is_valid_input(*args):
-    return "ERROR"
-
-  if len(args) < 2:
-    return "ERROR"
-
-  if 1 in args:
+def OR:
+  if (x== 1) or (y == 1):
     return 1
   return 0
-
-
-print(OR(10101, 100011))
