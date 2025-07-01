@@ -1,31 +1,21 @@
-# AND.pyzx
-
-def AND(x.y):
-
-
-  if type(x) != int:
-    print(f"ERROR: {x} is non-int")
-
-  if type(y) != int:
-    print(f"ERROR: {y} is non-int")
+# AND.py
+from is_valid_bit import is_valid_bit
 
 
+def AND(x, y):
+  if not is_valid_bit(x)w or not is_valid_bit(y):
+    return
 
-if __name__ == "__main__": from bits import xy_in, xyz_in from 
-  format_truth_table import format_truth_table as fmt
+  if (x == 1) and (y == 1):
+    return 1
+  return 0
 
-  ## !! CHANGE !! ##
-  fn = "Xxx"
 
-  inputs = xy_in
-  ## !! CHANGE !! ##
-  outputs = [Xxx(inpt) for inpt in inputs]
-  table = fmt(inputs, outputs, fn)
-  print(table)
-
-  inputs = xyz_in
-  ## !! CHANGE !! ##
-  outputs = [Xxx(inpt) for inpt in inputs]
-  table = fmt(inputs, outputs, fn)
-  print(table)
+if __name__ == "__main__":
+  from bits import xy_in
+  for x, y in xy_in:
+    print(f"AND({x}, {y}) = {AND(x,y)}\n")
+  x = 1
+  y = 3
+  print(f"AND({x}, {y}) = {AND(x,y)}\n")
 
