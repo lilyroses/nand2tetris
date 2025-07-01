@@ -2,16 +2,14 @@
 from is_valid_input import is_valid_input
 
 
-def AND(*args):
-  if not is_valid_input(*args):
-    return "ERROR"
+def AND(x, y):
+ 
+      return -1
 
-  if len(args) < 2:
-    return "ERROR"
-
-  if 0 in args:
-    return 0
-  return 1
+  cond1 = (x == 1)
+  cond2 = (y == 1)
+  if (x == 1) and (y == 1):
+    return 1
 
 
 if __name__ == "__main__":
@@ -19,8 +17,13 @@ if __name__ == "__main__":
   from format_truth_table import format_truth_table as fmt
 
   fn = "AND"
+
   inputs = xy_in
   outputs = [AND(inpt) for inpt in inputs]
+  table = fmt(inputs, outputs, fn)
+  print(table)
 
+  inputs = xyz_in
+  outputs = [AND(inpt) for inpt in inputs]
   table = fmt(inputs, outputs, fn)
   print(table)
