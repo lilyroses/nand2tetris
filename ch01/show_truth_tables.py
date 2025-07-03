@@ -1,8 +1,8 @@
 # show_truth_tables.py
 from AND import AND
-
-from bits import xy_in, xyz_in
-from is_valid_bit import is_valid_bit
+from NOT import NOT
+from utils.bits import xy_in, xyz_in
+from utils.is_valid_bit import is_valid_bit
 
 
 def show_truth_table(fn, inputs, outputs, title=""):
